@@ -1,0 +1,6 @@
+srip-quiz/
+build/
+src/lib/evaluate.js
+src/lib/index.css
+src/lib/label.css
+quiz.html

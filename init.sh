@@ -1,19 +1,20 @@
 #!/bin/bash
 
-branchName="master"
+branchName="develop"
 
 if [ -d srip-quiz ]; then
     echo "srip-quiz already present"
     (cd srip-quiz; git checkout $branchName; git pull origin $branchName)
-    echo "copying quiz json"
-    (cp quiz-data.json srip-quiz/src/Quiz/;)
-    echo "updated quiz json"
-    (cd srip-quiz/src/Quiz; )
+    echo "Copy quiz template"
+    (cd srip-quiz; cp -rf src/quiz.html ../src/lab/; cp -rf src/quiz.html ../src/lab/exp3/;)
+    echo "Copy quiz sources"
+    (cd srip-quiz/src; cp -rf *.js *.css ../../src/lib/;)
 
 else
     git clone -b $branchName https://github.com/virtual-labs/srip-quiz.git
-    echo "copying quiz json"
-    (cp quiz-data.json srip-quiz/src/Quiz/;)
-    echo "updated quiz json"
-    (cd srip-quiz/src/Quiz; )
+    (cd srip-quiz)
+    echo "Copy quiz template"
+    (cd srip-quiz; cp -rf src/quiz.html ../src/lab/; cp -rf src/quiz.html ../src/lab/exp3/;)
+    echo "Copy quiz sources"
+    (cd srip-quiz/src; cp -rf *.js *.css ../../src/lib/;)
 fi
