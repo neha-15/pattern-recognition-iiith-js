@@ -12,29 +12,29 @@
 
 * Structure of the repository
   #+BEGIN_EXAMPLE
-  ©À©¤©¤ init.sh
-  ©À©¤©¤ makefile
-  ©À©¤©¤ README.org
-  ©À©¤©¤ .gitignore
-  ©¸©¤©¤ src/
-      ©À©¤©¤ index.org
-      ©À©¤©¤ lab/
-      ©¦   ©À©¤©¤ quiz-data.json
-      ©¦   ©¸©¤©¤ exp1/
-      ©¦       ©À©¤©¤ docs/
-      ©¦       ©¦   ©À©¤©¤ project-documentation.pdf
-      ©¦       ©¦   ©¸©¤©¤ procedure.pdf
-      ©¦       ©À©¤©¤ exp1.html
-      ©¦       ©À©¤©¤ exp1.css
-      ©¦       ©À©¤©¤ exp1.js
-      ©¦       ©À©¤©¤ quiz-data.json
-      ©¦       ©¸©¤©¤ test-cases/
-      ©¦           ©¸©¤©¤ test-cases-for-project1.pdf
-      ©¸©¤©¤ libs/
-          ©À©¤©¤ Chart.js
-          ©À©¤©¤ evaluate.js
-          ©À©¤©¤ index.css
-          ©¸©¤©¤ label.css
+  |-- init.sh
+  |-- makefile
+  |-- README.org
+  |-- .gitignore
+  |-- src/
+      |-- index.org
+      |-- lab/
+      |   |-- quiz-data.json
+      |   |-- exp1/
+      |       |-- docs/
+      |       |   |-- project-documentation.pdf
+      |       |   |-- procedure.pdf
+      |       |-- exp1.html
+      |       |-- exp1.css
+      |       |-- exp1.js
+      |       |-- quiz-data.json
+      |       |-- test-cases/
+      |           |-- test-cases-for-project1.pdf
+      |-- libs/
+          |-- Chart.js
+          |-- evaluate.js
+          |-- index.css
+          |-- label.css
   #+END_EXAMPLE
 * Steps to run an experiment
   *STEP 1 :* Clone the experiment repository
