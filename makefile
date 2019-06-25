@@ -15,10 +15,11 @@ get-quiz-lib: init
 build: 
 	mkdir ${BUILD_DIR};rsync -avz --progress ${SRC_DIR}/* ${BUILD_DIR}
 
-clean:
+clean-build:
 	rm -rf ${BUILD_DIR}
-	rm -rf ${SRIP_DIR}
 
-
-
+clean-quiz:
+	rm -rf ${SRIP_DIR};cd ${SRC_DIR}/lab/;rm -rf quiz.html;rm -rf quiz-data.json;cd ${SRC_DIR}/lab/libs/;rm -rf evaluate.js;rm -rf index.css;rm -rf label.css; 	
+run:
+	cd ${BUILD_DIR};python -m SimpleHTTPServer 8000
 

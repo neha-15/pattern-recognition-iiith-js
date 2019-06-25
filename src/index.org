@@ -1,0 +1,71 @@
+#+TITLE: Index to Pattern Recognition
+#+AUTHOR: VLEAD
+#+DATE: [2019-06-24 Mon]
+#+SETUPFILE: ./org-templates/level-0.org
+#+TAGS: boilerplate(b)
+#+EXCLUDE_TAGS: boilerplate
+#+OPTIONS: ^:nil
+
+* Introduction
+  This document captures all the instructions to implement
+  and run an experiment.
+
+* Structure of the repository
+  #+BEGIN_EXAMPLE
+  ©À©¤©¤ init.sh
+  ©À©¤©¤ makefile
+  ©À©¤©¤ README.org
+  ©À©¤©¤ .gitignore
+  ©¸©¤©¤ src/
+      ©À©¤©¤ index.org
+      ©À©¤©¤ lab/
+      ©¦   ©À©¤©¤ quiz-data.json
+      ©¦   ©¸©¤©¤ exp1/
+      ©¦       ©À©¤©¤ docs/
+      ©¦       ©¦   ©À©¤©¤ project-documentation.pdf
+      ©¦       ©¦   ©¸©¤©¤ procedure.pdf
+      ©¦       ©À©¤©¤ exp1.html
+      ©¦       ©À©¤©¤ exp1.css
+      ©¦       ©À©¤©¤ exp1.js
+      ©¦       ©À©¤©¤ quiz-data.json
+      ©¦       ©¸©¤©¤ test-cases/
+      ©¦           ©¸©¤©¤ test-cases-for-project1.pdf
+      ©¸©¤©¤ libs/
+          ©À©¤©¤ Chart.js
+          ©À©¤©¤ evaluate.js
+          ©À©¤©¤ index.css
+          ©¸©¤©¤ label.css
+  #+END_EXAMPLE
+* Steps to run an experiment
+  *STEP 1 :* Clone the experiment repository
+  #+BEGIN_EXAMPLE
+  git clone https://github.com/vitual-labs/<EXPERIMENT>.git
+  #+END_EXAMPLE
+
+  *STEP 2 :* Change directory to experiment repository 
+  #+BEGIN_EXAMPLE
+  cd <EXPERIMENT>
+  #+END_EXAMPLE
+ 
+  *STEP 3 :* Get the quiz library 
+  #+BEGIN_EXAMPLE
+  make -k get-quiz-lib
+  #+END_EXAMPLE
+
+  *STEP 4 :* Build the sources
+  #+BEGIN_EXAMPLE
+  make -k build
+  #+END_EXAMPLE
+  
+  *STEP 5 :* Run the experiment server
+  #+BEGIN_EXAMPLE
+  make -k run
+  #+END_EXAMPLE
+
+  To remove the build 
+  #+BEGIN_EXAMPLE
+  make -k clean
+  #+END_EXAMPLE
+  
+  
+
