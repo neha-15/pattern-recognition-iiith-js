@@ -10,7 +10,7 @@
   This document captures all the instructions to implement
   and run an experiment.
 
-* Structure of the repository
+* Repository Structure
   #+BEGIN_EXAMPLE
   |-- init.sh
   |-- makefile
@@ -19,22 +19,36 @@
   |-- src/
       |-- index.org
       |-- lab/
+      |   |-- Introduction.html
+      |   |-- quiz.html
       |   |-- quiz-data.json
       |   |-- exp1/
       |       |-- docs/
       |       |   |-- project-documentation.pdf
       |       |   |-- procedure.pdf
-      |       |-- exp1.html
-      |       |-- exp1.css
-      |       |-- exp1.js
+      |       |
+      |       |-- Introduction.html  
+      |       |-- exp1_simulation.html
+      |       |-- exp1_simulation.css
+      |       |-- exp1_simulation.js
+      |       |-- quiz.html
       |       |-- quiz-data.json
       |       |-- test-cases/
       |           |-- test-cases-for-project1.pdf
+      |       .
+      |       .
+      |       .
       |-- libs/
-          |-- Chart.js
+      |   |-- Chart.js
+      |         .
+      |         .
+      |         .
+      |-- quiz/
           |-- evaluate.js
           |-- index.css
           |-- label.css
+          |-- quiz-data.json
+
   #+END_EXAMPLE
 * Steps to run an experiment
   *STEP 1 :* Clone the experiment repository
@@ -42,30 +56,33 @@
   git clone https://github.com/vitual-labs/<EXPERIMENT>.git
   #+END_EXAMPLE
 
-  *STEP 2 :* Change directory to experiment repository 
+  *STEP 2 :* Change directory to experiment repo
   #+BEGIN_EXAMPLE
   cd <EXPERIMENT>
   #+END_EXAMPLE
- 
-  *STEP 3 :* Get the quiz library 
-  #+BEGIN_EXAMPLE
-  make -k get-quiz-lib
-  #+END_EXAMPLE
 
-  *STEP 4 :* Build the sources
+  *STEP 3 :* Build the sources
   #+BEGIN_EXAMPLE
   make -k build
   #+END_EXAMPLE
   
-  *STEP 5 :* Run the experiment server
+  *STEP 4 :* Run the experiment server
   #+BEGIN_EXAMPLE
   make -k run
   #+END_EXAMPLE
-
+  
+  To include quiz sources as a library in experiment refer
+  [[https://github.com/virtual-labs/srip-quiz/blob/develop/docs/user-manual.org][quiz user manual]].
+  
   To remove the build 
   #+BEGIN_EXAMPLE
-  make -k clean
+  make -k clean-build
   #+END_EXAMPLE
-  
+
+  To remove the srip repo from experiment 
+  #+BEGIN_EXAMPLE
+  make -k clean-srip-quiz
+  #+END_EXAMPLE
+
   
 
