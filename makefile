@@ -6,23 +6,35 @@ SRIP_DIR=${PWD}/srip-quiz
 THEME=green-icon
 STATUS=0
 
-all: get-quiz-lib build
+all: get-quiz-lib clean-build build 
 
 init:
 	./init.sh
 
 get-quiz-lib: init 
 
-build: 
-	mkdir ${BUILD_DIR};rsync -avz --progress ${SRC_DIR}/lab/* ${SRC_DIR}/libs ${SRC_DIR}/themes/${THEME}/* ${BUILD_DIR}
+build: create-build-dir copy-lab-sources copy-libs copy-quiz copy-lab-theme
+	
+create-build-dir:
+	mkdir -p ${BUILD_DIR}
+
+copy-lab-sources:
+	cp -rf ${SRC_DIR}/lab/* ${BUILD_DIR}
+
+copy-libs:
+	cp -rf ${SRC_DIR}/libs ${BUILD_DIR}
+
+copy-quiz:
+	cp -rf ${SRC_DIR}/quiz ${BUILD_DIR}
+
+copy-lab-theme:
+	cp -rf ${SRC_DIR}/themes/${THEME}/* ${BUILD_DIR}
 
 clean-build:
 	rm -rf ${BUILD_DIR}
 
-clean-quiz:
+clean-srip-quiz:
 	rm -rf ${SRIP_DIR}
-	cd ${SRC_DIR}/lab/;rm -rf quiz.html quiz-data.json
-	cd ${SRC_DIR}/lab/libs/;rm -rf evaluate.js index.css label.css 	
 
 run:
 	cd ${BUILD_DIR};python -m SimpleHTTPServer 8000
