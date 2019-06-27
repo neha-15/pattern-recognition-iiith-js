@@ -13,7 +13,7 @@ init:
 
 get-quiz-lib: init 
 
-build: create-build-dir copy-lab-sources copy-libs copy-quiz copy-lab-theme
+build: clean-build create-build-dir copy-lab-sources copy-libs copy-quiz copy-lab-theme
 	
 create-build-dir:
 	mkdir -p ${BUILD_DIR}

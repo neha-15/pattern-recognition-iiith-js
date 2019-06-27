@@ -61,7 +61,7 @@
   cd <EXPERIMENT>
   #+END_EXAMPLE
 
-  *STEP 3 :* Build the sources
+  *STEP 3 :* Removes the build directory and builds the sources
   #+BEGIN_EXAMPLE
   make -k build
   #+END_EXAMPLE
