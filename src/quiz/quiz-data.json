@@ -5,276 +5,251 @@
             "containers":"5"
         },
         {
-            "q": "Total area under the curve of a continuous probability density function is always equal to:",
+            "q": "Question 1",
             "option": [
-                "(A) 0",
-                "(B) 1",
-                "(C) -1",
-                "(D) None of the above"
+                "Option 1",
+                "Option 2",
+                "Option 3"
             ],
-            "answer": "(A) 0",
+            "answer": "Option 1",
             "description": "Explanation for Question 1"
         },
         {
-            "q": "The appropriate graph of probability density function is: ",
+            "q": "Question 2",
             "option": [
-                "(A) Curve",
-                "(B) Histogram",
-                "(C) Polygon",
-                "(D) All"
+                "Option 1",
+                "Option 2",
+                "Option 3"
             ],
             "answer": "Option 2",
             "description": "Explanation for Question 2"
         },
         {
-            "q": "Difference between highest and lowest observation is 20 and coefficient of range is 0.077 then sum of highest and lowest value is",
+            "q": "Question 3",
             "option": [
-                "(A) 210",
-                "(B) 220",
-                "(C) 260",
-                "(D) 240"
+                "Option 1",
+                "Option 2",
+                "Option 3"
             ],
             "answer": "Option 3",
             "description": "Explanation for Question 3"
         },
         {
-            "q": "In a discrete probability distribution the sum of all the probabilities is always equal to: ",
+            "q": "Question 4",
             "option": [
-                "(A) 0",
-                "(B) 1",
-                "(C) Minimum",
-                "(D) Maximum"
+                "Option 1",
+                "Option 2",
+                "Option 3"
             ],
             "answer": "Option 1",
             "description": "Explanation for Question 4"
         },
         {
-            "q": "Find the value of p for which the points (-5, 1), (1, p) and (4, -2) are collinear.",
+            "q": "Question 5",
             "option": [
-                "(A) -3",
-                "(B) -2",
-                "(C) 0",
-                "(D) -1"
+                "Option 1",
+                "Option 2",
+                "Option 3"
             ],
             "answer": "Option 2",
             "description": "Explanation for Question 5"
         },
         {
-            "q": "The covariance of two random variables",
+            "q": "Question 6",
             "option": [
-                "(A) does not have an upper or lower bound",
-                "(B) does not provide an indication of the direction of the relationship between the variables",
-                "(C) is greatly influenced by the scaling of the numbers.",
-                "(D) both Answer 1 and 3"
+                "Option 1",
+                "Option 2",
+                "Option 3"
             ],
             "answer": "Option 3",
             "description": "Explanation for Question 6"
         },
         {
-            "q": "Which point lies on y-axis?",
+            "q": "Question 7",
             "option": [
-                "(A) (1, 3)",
-                "(B) (0, 3)",
-                "(C) (5, 2)",
-                "(D) (2, 3)"
+                "Option 1",
+                "Option 2",
+                "Option 3"
             ],
             "answer": "Option 3",
             "description": "Explanation for Question 7"
         },
         {
-            "q": "If the random variable takes negative values, then the negative values will have: ",
+            "q": "Question 8",
             "option": [
-                "(A) Positive Probabilities",
-                "(B) Minimum Probabilities",
-                "(C) Minimum Probabilities",
-                "(D) All"
+                "Option 1",
+                "Option 2",
+                "Option 3"
             ],
             "answer": "Option 1",
             "description": "Explanation for Question 8"
         },
         {
-            "q": "A basketball player makes 80 percent of his free throws during the season. What is the probability that he will make exactly 6 of his next 8 free throws?",
+            "q": "Question 9",
             "option": [
-                "(A) 0.1468",
-                "(B) 0.3355",
-                "(C) 0.1678",
-                "(D) 0.2936"
+                "Option 1",
+                "Option 2",
+                "Option 3"
             ],
             "answer": "Option 2",
             "description": "Explanation for Question 9"
         },
         {
-            "q": "Which graph is parallel to x-axis?",
+            "q": "Question 10",
             "option": [
-                "(A) y=x+1",
-                "(B) y = 2",
-                "(C) x = 3",
-                "(D) x = 2y"
+                "Option 1",
+                "Option 2",
+                "Option 3"
             ],
             "answer": "Option 1",
             "description": "Explanation for Question 10"
         },
         {
-            "q": "What is the runtime efficiency of using brute force technique for the closest pair problem?",
+            "q": "Question 11",
             "option": [
-                "(A) O(N)",
-                "(B) O(N log N)",
-                "(C) O(N^2)",
-                "(D) O(log N)"
+                "Option 1",
+                "Option 2",
+                "Option 3"
             ],
             "answer": "Option 3",
             "description": "Explanation for Question 11"
         },
         {
-            "q": "Which of the following is similar to Euclidean distance?",
+            "q": "Question 12",
             "option": [
-                "(A) Manhattan distance",
-                "(B) Pythagoras metric",
-                "(C) Chebyshev distance",
-                "(D) Heuristic distance"
+                "Option 1",
+                "Option 2",
+                "Option 3"
             ],
             "answer": "Option 1",
             "description": "Explanation for Question 12"
         },
         {
-            "q": "The sum of the product of each value of a discrete random variable X times its probability is referred to as its ",
+            "q": "Question 13",
             "option": [
-                "(A) expected value",
-                "(B) Variance",
-                "(C) Mean",
-                "(D) Both a and c"
+                "Option 1",
+                "Option 2",
+                "Option 3"
             ],
             "answer": "Option 2",
             "description": "Explanation for Question 13"
         },
         {
-            "q": "The most important condition for which closest pair is calculated for the points (pi, pj) is?",
+            "q": "Question 14",
             "option": [
-                "(A) i>j",
-                "(B) i!=j",
-                "(C) i=j",
-                "(D) i<j"
+                "Option 1",
+                "Option 2",
+                "Option 3"
             ],
             "answer": "Option 1",
             "description": "Explanation for Question 14"
         },
         {
-            "q": "Which approach is based on computing the distance between each pair of distinct points and finding a pair with the smallest distance?",
+            "q": "Question 15",
             "option": [
-                "(A) Brute force",
-                "(B) Exhaustive search",
-                "(C) Divide and conquer",
-                "(D) Branch and bound"
+                "Option 1",
+                "Option 2",
+                "Option 3"
             ],
             "answer": "Option 3",
             "description": "Explanation for Question 15"
         },
         {
-            "q": "A quantity resulting from an experiment that, by chance, can assume different values is called: ",
+            "q": "Question 16",
             "option": [
-                "(A) Random experiment",
-                "(B) Random sample",
-                "(C) Random variable",
-                "(D) Random process"
+                "Option 1",
+                "Option 2",
+                "Option 3"
             ],
             "answer": "Option 2",
             "description": "Explanation for Question 16"
         },
         {
-            "q": "Which one is not an example of random experiment?",
+            "q": "Question 17",
             "option": [
-                "(A) A coin is tossed and the outcome is either a head or a tail",
-                "(B)  A six-sided die is rolled ",
-                "(C) Some number of persons will be admitted to a hospital emergency room during any hour.",
-                "(D) All medical insurance claims received by a company in a given year. "
+                "Option 1",
+                "Option 2",
+                "Option 3"
             ],
             "answer": "Option 2",
             "description": "Explanation for Question 17"
         },
         {
-            "q": "Which point lies in IV quadrant?",
+            "q": "Question 18",
             "option": [
-                "(A) (-3,-4)",
-                "(B) (2,-4)",
-                "(C) (-2, 3)",
-                "(D) (0, 1)"
+                "Option 1",
+                "Option 2",
+                "Option 3"
             ],
             "answer": "Option 1",
             "description": "Explanation for Question 18"
         },
         {
-            "q": "Probability distribution of discrete random variable is classified as",
+            "q": "Question 19",
             "option": [
-                "(A) probability mass function",
-                "(B) posterior mass function",
-                "(C) interior mass function",
-                "(D) continuous mass function"
+                "Option 1",
+                "Option 2",
+                "Option 3"
             ],
             "answer": "Option 3",
             "description": "Explanation for Question 19"
         },
         {
-            "q": "What is the basic operation of closest pair algorithm using brute force technique?",
+            "q": "Question 20",
             "option": [
-                "(A) Euclidean distance",
-                "(B) Radius",
-                "(C) Area",
-                "(D) Manhattan distance"
+                "Option 1",
+                "Option 2",
+                "Option 3"
             ],
             "answer": "Option 1",
             "description": "Explanation for Question 20"
         },
         {
-            "q": "A discrete probability distribution may be represented by: ",
+            "q": "Question 21",
             "option": [
-                "(A) Table",
-                "(B) Graph",
-                "(C) Mathematical equation",
-                "(D) All"
+                "Option 1",
+                "Option 2",
+                "Option 3"
             ],
             "answer": "Option 1",
             "description": "Explanation for Question 21"
         },
         {
-            "q": "Numbers selected by a random process and are equally distributed in a table are called: ",
+            "q": "Question 22",
             "option": [
-                "(A) Attributes",
-                "(B) Random variables",
-                "(C) Random numbers",
-                "(D) Quantitative variables"
+                "Option 1",
+                "Option 2",
+                "Option 3"
             ],
             "answer": "Option 1",
             "description": "Explanation for Question 22"
         },
         {
-            "q": "Which of the following areas do closest pair problem arise?",
+            "q": "Question 23",
             "option": [
-                "(A) computational geometry",
-                "(B) graph colouring problems",
-                "(C) numerical problems",
-                "(D) string matching"
+                "Option 1",
+                "Option 2",
+                "Option 3"
             ],
             "answer": "Option 1",
             "description": "Explanation for Question 23"
         },
         {
-            "q": "Find the distance of the point (-6, 8) from the origin",
+            "q": "Question 24",
             "option": [
-                "(A) 8",
-                "(B) 11",
-                "(C) 10",
-                "(D) 9"
+                "Option 1",
+                "Option 2",
+                "Option 3"
             ],
             "answer": "Option 1",
             "description": "Explanation for Question 24"
         },
         {
-            "q": "What is Euclidean distance?",
+            "q": "Question 25",
             "option": [
-                "(A) technique used to find the distance among objects",
-                "(B) technique used to find the dissimilarity among objects",
-                "(C) Both 1 and 2",
-                "(D) None of the above"
+                "Option 1",
+                "Option 2",
+                "Option 3"
             ],
             "answer": "Option 1",
             "description": "Explanation for Question 25"
