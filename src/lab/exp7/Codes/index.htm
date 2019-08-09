@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Data Clustering</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="toggle.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="kmeans.js"></script>
+
+    <script type="text/javascript" src="newmst.js"></script>
+    <script type="text/javascript" src="prims.js"></script>
+</head>
+
+<body onload="InitLoad()">
+
+    <div class="hwrapper outerdiv">
+        <div id="graph" style="height: 450px">
+
+        </div>
+        <div class="innerdiv">
+            <h3>Data Clustering</h3>
+            <hr>
+            <h4 id="algo_name"></h4>
+            <div style="text-align: center;">
+                <div class="DivDecor" style="margin-left:32%;">
+                    <button class="buttonDecor" onclick="cancelAlgo()" id="cancelAlgo" style="display: none;">Change
+                        Option</button>
+                </div>
+
+                <div class="DivDecor" id="algoselectionDiv">
+                    <select id="algoSelect">
+                        <option value="Kmeans">K Means</option>
+                        <option value="MST">MST</option>
+                    </select><br>
+                    <button class="buttonDecor" onclick="selectAlgo()">Select the Algorithm</button>
+                </div>
+            </div>
+            <div id="KmeansDiv">
+                <div class="DivDecor">
+                    <select id="traceSelect">
+                        <option value="1">L1</option>
+                        <option value="2">L2</option>
+                        <option value="3">L3</option>
+                        <option value="4">L4</option>
+                    </select>
+                    <button class="buttonDecor" id="load" onclick="loadRandomTraces()">Load</button><br>
+                </div>
+                <div>
+                    <textarea name="coordinates" id="X" readonly></textarea>
+                    <textarea name="coordinates" id="Y" readonly></textarea>
+                </div>
+                <div class="DivDecor">
+                    <button class="buttonDecor" id="start" onclick="KMeans_startIteration()">Start</button>
+                    <button class="buttonDecor" id="next" onclick="KMeans_nextIteration()">Next</button>
+                    <button class="buttonDecor" id="finish" onclick="KMeans_finishIteration()">Finish</button><br><br>
+
+                </div>
+                <div id="class"></div>
+                <div id="status_kmeans"></div>
+
+            </div>
+            <div class="DivDecor" id="MSTDiv">
+                <div>
+                    <textarea name="coordinates" id="X_MST" readonly></textarea>
+                    <textarea name="coordinates" id="Y_MST" readonly></textarea>
+                </div>
+                <div class="DivDecor">
+                    <button class="buttonDecor" id="start_mst" onclick="MST_startIteration()">Start</button>
+                    <button class="buttonDecor" id="next_mst" onclick="MST_nextIteration()">Next</button>
+                    <button class="buttonDecor" id="finish_mst" onclick="MST_finishIteration()">Finish</button>
+                </div>
+                <div id="class_mst"></div>
+                <div id="status_mst"></div>
+
+            </div>
+            <div class="DivDecor" id="UserDiv" style="display: none;">
+                <label class="switch">
+                    <input id="TestPoints" type="checkbox">
+                    <div class="slider"></div>
+                </label>
+                <button class="buttonDecor" id="clear" onclick="removetestPoints()">Remove first point</button>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

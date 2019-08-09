@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="Styles.css">
+<title>Pattern Recognition:Bayesian Classification
+</title>
+</head>
+<body id="bd1">
+<table id="table1">
+	<tr>
+		<td>
+<div class="container" onclick="marker(event)">
+<canvas id='myChart'  height="600" width="1000">
+</canvas>
+</div>
+<script src="Script.js" language="javascript" type="text/javascript">
+</script>
+<div class="container2">
+<canvas id="Values" height="50" width="600">
+</canvas>
+<script type="text/javascript"  language="javascript" >
+	var ctx = document.getElementById("Values").getContext('2d');
+	 ctx.fillRect(275,25, 10, 10);
+	 ctx.font = "15px Arial";
+	 ctx.fillText("Class1",290,35);
+	 ctx.fillStyle="Red";
+	 ctx.fillRect(350,25, 10, 10);
+	 ctx.font = "15px Arial";
+	 ctx.fillStyle="Black";
+	 ctx.fillText("Class2",365,35);
+</script>
+</div>
+</td>
+<td>
+	<div class="container3">
+<script>
+document.write("<br>"+"<b>"+"Load Custom Datasets"+"<br>"+"<br>"+"Dataset"+"</b>");
+</script>
+<select id="s1">
+	<option name="T1" >T1</option>
+	<option name="T2" >T2</option>
+	<option name="T3" >T3</option>
+	<option name="T4" >T4</option>
+</select>
+<button type="button" id="b1">Load</button>
+<br>
+<br>
+<b>
+Mark Points</b><br>
+<br>
+<div class="slidecontainer" width="600">
+  <input type="range" min="0" max="1000" value="0" class="slider" id="myRange">
+  <p>
+  	<b>
+  	<pre>Class 1				 Class 2 </pre>
+  </b>
+</p>
+</div>
+<button type="button" id="b2">Mark points for Class 1</button>
+<button type="button" id="b2a">Mark points for Class 2</button>
+<button type="button" id="b3">Mark All</button>
+<button type="button" id="b4">Clear</button>
+<br>
+<br>
+<b>
+Generate Random Values</b><br>
+<table>
+	<tr>
+		<td></td>
+		<td><b>Class 1</b></td>
+		<td></td>
+		<td><b>Class 2</b></td>
+	</tr>
+	<br>
+	<tr>
+		<td><b>Mean</b></td>
+		<td><input type="text" id="t1" size="5"></input></td>
+		<td><input type="text" id="t2" size="5"></input></td>
+		<td><input type="text" id="t3" size="5"></input></td>
+		<td><input type="text" id="t4" size="5"></input></td>
+	</tr>
+	<tr>
+		<td><b>Co-Variance</b></td>
+		<td><input type="text" id="t5" size="5"></input></td>
+		<td><input type="text" id="t6" size="5"></input></td>
+		<td><input type="text" id="t7" size="5"></input></td>
+		<td><input type="text" id="t8" size="5"></input></td>
+	</tr>
+	<tr>
+		<td><button id="b5">Generate</button></td>
+		<td><input type="text" id="t9" size="5"></input></td>
+		<td><input type="text" id="t10" size="5"></input></td>
+		<td><input type="text" id="t11" size="5"></input></td>
+		<td><input type="text" id="t12" size="5"></input></td>
+	</tr>	
+	<tr>
+		<td colspan="2"><button id="b6">Resize Axes</button></td>
+	</tr>	
+	<tr>
+		<td colspan="5"><button id="b7">Generate Bayesian Classification for both classes</button></td>
+</table>
+<script type="text/javascript" src="Function.js" language="javascript">
+</script>
+<div id="meanresult">
+</div>
+<div id="result"></div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
