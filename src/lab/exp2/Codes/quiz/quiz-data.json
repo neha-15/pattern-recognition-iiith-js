@@ -1,0 +1,202 @@
+{
+    "artciles": [
+        {
+            "quiztitle":"Quiz for Pattern Recognition",
+            "containers":"5"
+        },
+        {
+            "q": "WhicFrom given input-output pairs pattern recognition model should capture characteristics of the system?",
+            "option": [
+                "True",
+                "False"
+            ],
+            "answer": "True",
+            "description": "From given input-output pairs pattern recognition model should be able to capture characteristics of the system & hence should be designed in that manner. "
+        },
+        {
+            "q": "Let a(l), b(l) represent in input-output pairs, where “l” varies in natural range of no.s, then if a(l)=b(l)?",
+            "option": [
+                "problem is heteroassociation",
+                "problem is autoassociation",
+                "can be either auto or heteroassociation",
+                "none of the mentioned"
+            ],
+            "answer": "problem is autoassociation",
+            "description": " When a(l)=b(l) problem is classified as autoassociation. "
+        },
+        {
+            "q": "Let a(l), b(l) represent in input-output pairs, where “l” varies in natural range of no.s, then if a(l)=!b(l)",
+            "option": [
+                "problem is heteroassociation",
+                "problem is autoassociation",
+                "can be either auto or heteroassociation"
+            ],
+            "answer": "problem is heteroassociation",
+            "description": "When a(l) & b(l)are distinct, problem is classified as autoassociation. "
+        },
+        {
+            "q": " The recalled output in pattern association problem depends on?",
+            "option": [
+                "nature of input-output",
+                " design of network",
+                " both input & design"
+            ],
+            "answer": " both input & design",
+            "description": "The recalled output in pattern association problem depends on both input & design of network."
+        },
+        {
+            "q": "If a(l) gives output b(l) & a’=a(l)+m,where m is small quantity & if a’ gives ouput b(l) then?",
+            "option": [
+                "network exhibits accretive behaviour",
+                " network exhibits interpolative behaviour",
+                "exhibits both accretive & interpolative behaviour"
+            ],
+            "answer": " network exhibits accretive behaviour",
+            "description": "This follows from basic definition of accretive behaviour in neural."
+        },
+        {
+            "q": "If a(l) gives output b(l) & a’=a(l)+m,where m is small quantity & if a’ gives ouput b(l)+n then?",
+            "option": [
+                " network exhibits accretive behaviour",
+                "network exhibits interpolative behaviour",
+                " exhibits both accretive & interpolative behaviour"
+            ],
+            "answer": "network exhibits interpolative behaviour",
+            "description": "This follows from basic definition in neural."
+        },
+        {
+            "q": "Can system be both interpolative & accretive at same time?",
+            "option": [
+                "yes",
+                "no"
+            ],
+            "answer": "no",
+            "description": "System can’t exhibit both behaviour at same time. since these are based on different approach & algorithm."
+        },
+        {
+            "q": "What are 3 basic types of neural nets that form basic functional units amongi)feedforward ii) loop iii) recurrent iv) feedback v) combination of feed forward & back?",
+            "option": [
+                "i, ii, iii",
+                "i, ii, iv",
+                " i, iv, v"
+            ],
+            "answer": " i, iv, v",
+            "description": "These form the basic functional units of neural nets."
+        },
+        {
+            "q": "Feedback networks are used for autoassociation & pattern storage?",
+            "option": [
+                "yes",
+                "no"
+            ],
+            "answer": "yes",
+            "description": "Feedback networks are typically used for autoassociation & pattern storage."
+        },
+        {
+            "q": "Feedforward networks are also used for autoassociation & pattern storage?",
+            "option": [
+                "yes",
+                "no"
+            ],
+            "answer": "no",
+            "description": "Feedforward networks are used for pattern mapping."
+        },
+        {
+            "q": "What is the objective of perceptron learning?",
+            "option": [
+                "class identification",
+                "weight adjustment",
+                "adjust weight along with class identification"
+            ],
+            "answer": "adjust weight along with class identification",
+            "description": "The objective of perceptron learning is to adjust weight along with class identification."
+        },
+        {
+            "q": "On what factor the number of outputs depends?",
+            "option": [
+                "distinct inputs",
+                "distinct classes",
+                "both on distinct classes & inputs"
+            ],
+            "answer": "distinct classes",
+            "description": " Number of outputs depends on number of classes."
+        },
+        {
+            "q": "In perceptron learning, what happens when input vector is correctly classified?",
+            "option": [
+                "small adjustments in weight is done",
+                "large adjustments in weight is done",
+                "no adjustments in weight is done"
+            ],
+            "answer": "no adjustments in weight is done",
+            "description": "No adjustments in weight is done, since input has been correctly classified which is the objective of the system"
+        },
+        {
+            "q": "When two classes can be separated by a separate line, they are known as?",
+            "option": [
+                "linearly separable",
+                "linearly inseparable classe",
+                "may be separable or inseparable, it depends on system"
+            ],
+            "answer": "linearly separable",
+            "description": "Linearly separable classes, functions can be separated by a line."
+        },
+        {
+            "q": " If two classes are linearly inseparable, can perceptron convergence theorem be applied?",
+            "option": [
+                "yes",
+                "no"
+            ],
+            "answer": "no",
+            "description": "Perceptron convergence theorem can only be applied, if and only if two classses are linearly separable."
+        },
+        {
+            "q": "Two classes are said to be inseparable when?",
+            "option": [
+                "E there may exist straight lines that doesn’t touch each other",
+                "there may exist straight lines that can touch each other",
+                " there is only one straight line that separates them"
+            ],
+            "answer": " there is only one straight line that separates them",
+            "description": "Linearly separable classes, functions can be separated by a line."
+        },
+        {
+            "q": "Is it necessary to set initial weights in prceptron convergence theorem to zero?",
+            "option": [
+                "yes",
+                "no"
+            ],
+            "answer": "no",
+            "description": "Initial setting of weights doesn’t affect perceptron convergence theorem"
+        },
+        {
+            "q": "The perceptron convergence theorem is applicable for what kind of data?",
+            "option": [
+                "binary",
+                "bipolar",
+                "both binary and bipolar"
+            ],
+            "answer": "both binary and bipolar",
+            "description": "The perceptron convergence theorem is applicable for both binary and bipolar input, output data."
+        },
+        {
+            "q": "w(m + 1) = w(m) + n(b(m) – s(m)) a(m), where b(m) is desired output, s(m) is actual output, a(m) is input vector and ‘w’ denotes weight, can this model be used for perceptron learning?",
+            "option": [
+                "yes",
+                "no"
+            ],
+            "answer": "yes",
+            "description": "Gradient descent can be used as perceptron learning."
+        },
+        {
+            "q": " If e(m) denotes error for correction of weight then what is formula for error in perceptron learning model: w(m + 1) = w(m) + n(b(m) – s(m)) a(m), where b(m) is desired output, s(m) is actual output, a(m) is input vector and ‘w’ denotes weight",
+            "option": [
+                "e(m) = n(b(m) – s(m)) a(m)",
+                "e(m) = n(b(m) – s(m))",
+                "e(m) = (b(m) – s(m))"
+            ],
+            "answer": "e(m) = (b(m) – s(m))",
+            "description": "Error is difference between desired and actual output."
+        }
+    ]
+}
