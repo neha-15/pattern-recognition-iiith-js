@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>VirtualBox installation to run IIITH labs </title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="title" content="VirtualBox installation to run IIITH labs "/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="20 Feb 2020"/>
+<meta name="author" content="Vlead Systems Team"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">VirtualBox installation to run IIITH labs </h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Introduction</a></li>
+<li><a href="#sec-2">2 Overview and Motivation</a></li>
+<li><a href="#sec-3">3 Systems Requirements</a></li>
+<li><a href="#sec-4">4 VirtualBox installation steps</a>
+<ul>
+<li><a href="#sec-4-1">4.1 VirtualBox installation steps on <b>Windows OS</b>.</a></li>
+<li><a href="#sec-4-2">4.2 VirtualBox installation steps on <b>CentOS-6.X OS</b>.</a></li>
+<li><a href="#sec-4-3">4.3 VirtualBox installation steps on <b>Ubuntu 14.04</b>.</a></li>
+<li><a href="#sec-4-4">4.4 VirtualBox installation steps on <b>Mac OS X</b></a></li>
+</ul>
+</li>
+<li><a href="#sec-5">5 Virtual-Labs VirtualBox import steps</a></li>
+<li><a href="#sec-6">6 Using VirtualBox to run Virtual Labs</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
+
+<p>  This document has the installation process of software dependecies
+  for IIITH labs.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Overview and Motivation</h2>
+<div class="outline-text-2" id="text-2">
+
+
+<p>
+  Virtual Labs is providing an approach to access Labs and
+  its experiments using <a href="https://www.virtualbox.org/wiki">VirtualBox</a>. 
+</p>
+<p>
+  This approach eliminates the need of installing dependencies
+  such as Adobe Flash, Java3D, etc. on user machine
+</p>
+<p> 
+  The VirtualBox that is provided by Virtual Labs can be
+  used for both <a href="https://info.vlabs.ac.in/workshops/">Online</a> and <a href="https://info.vlabs.ac.in/college-cloud-edition/">Offline( College Cloud)</a> versions
+  of Virtual Labs.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Systems Requirements</h2>
+<div class="outline-text-2" id="text-3">
+
+<p>  Minimum systems requirements.
+</p><ol>
+<li>Operating Systems ( OS )- Any OS that supports Oracle
+     VirtualBox or VMWare Workstation. The machine should
+     have <a href="https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Virtualization_Administration_Guide/sect-Virtualization-Troubleshooting-Enabling_Intel_VT_and_AMD_V_virtualization_hardware_extensions_in_BIOS.html">provision to support Virtualization</a> Technology
+</li>
+<li>4GB RAM.
+</li>
+<li>Dual Core processor.
+</li>
+</ol>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> VirtualBox installation steps</h2>
+<div class="outline-text-2" id="text-4">
+
+<ol>
+<li>Visit the <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a> provider website. Please note that
+     installation needs to be done only once.
+</li>
+<li>Choose the appropriate VirtualBox version based on the Operating
+     System ( OS ) installed on the machine.
+</li>
+<li>Download the selected VirtualBox.
+</li>
+</ol>
+
+
+</div>
+
+<div id="outline-container-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> VirtualBox installation steps on <b>Windows OS</b>.</h3>
+<div class="outline-text-3" id="text-4-1">
+
+<ol>
+<li>Double click on <b>.exe</b> file.
+</li>
+<li>Follow the instructions appearing on installation wizard.
+</li>
+<li>After installation, ensure that a VirtualBox icon is created
+        on the desktop.
+</li>
+<li>Steps 6 and 7 are installation step examples for CentOS-6.x and
+       Ubuntu 14.04.  These installation steps will vary based on the
+       version of the OS installed on the user machine.  Please follow
+       the <a href="https://www.virtualbox.org/wiki/Linux_Downloads">link</a> for appropriate steps.
+</li>
+</ol>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> VirtualBox installation steps on <b>CentOS-6.X OS</b>.</h3>
+<div class="outline-text-3" id="text-4-2">
+
+<ul>
+<li>Download RPM package.
+
+
+
+<pre class="example">wget http://download.virtualbox.org/virtualbox/5.1.6/VirtualBox-5.1-5.1.6_110634_el6-1.x86_64.rpm
+</pre>
+
+</li>
+<li>Install VirtualBox.
+
+
+
+<pre class="example">sudo rpm -i VirtualBox-5.1-5.1.6_110634_el6-1.x86_64.rpm
+</pre>
+
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-3" class="outline-3">
+<h3 id="sec-4-3"><span class="section-number-3">4.3</span> VirtualBox installation steps on <b>Ubuntu 14.04</b>.</h3>
+<div class="outline-text-3" id="text-4-3">
+
+<ul>
+<li>Download VirtualBox.
+
+
+
+<pre class="example">wget http://download.virtualbox.org/virtualbox/5.2.0/virtualbox-5.2_5.2.0-118431~Ubuntu~trusty_amd64.deb
+</pre>
+
+</li>
+<li>Install VirtualBox.
+
+
+
+<pre class="example">sudo dpkg -i virtualbox-5.2_5.2.0-118431~Ubuntu~trusty_amd64.deb
+</pre>
+
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-4-4" class="outline-3">
+<h3 id="sec-4-4"><span class="section-number-3">4.4</span> VirtualBox installation steps on <b>Mac OS X</b></h3>
+<div class="outline-text-3" id="text-4-4">
+
+<ul>
+<li>Download the VirtualBox from <a href="http://download.virtualbox.org/virtualbox/5.2.0/VirtualBox-5.2.0-118431-OSX.dmg">here</a> and Save it.
+</li>
+<li>Double click on downloaded file <code>.dmg</code>.
+</li>
+<li>Follow the instructions and install it.
+</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Virtual-Labs VirtualBox import steps</h2>
+<div class="outline-text-2" id="text-5">
+
+<ol>
+<li>Follow the <a href="http://exp-vlabs.iiit.ac.in/downloads/">link</a> /to download and save the
+     <b>ubuntu-14.04-college-cloud.ova</b>. Please note that import steps
+     need to be done only once.
+</li>
+<li>Double click on the <b>ubuntu-14.04-college-cloud.ova</b> file.
+</li>
+<li>A import window will appear.
+</li>
+<li>Import the file <b>ubuntu-14.04-college-cloud.ova</b> and follow the
+     steps to install it. This may take 5 to 10  minutes.
+</li>
+<li>On completion of step 4, select the <b>ubuntu-14.04-college-cloud</b>
+     from the VirtualBox window. Please allocate the <code>Processor</code> and
+     <code>Memory/RAM</code> size from the Settings menu appropriately based on
+     the system configuration of the user machine.
+
+<dl>
+<dt><b>NOTE</dt><dd>Recommended Settings for the imported box</b>
+
+
+
+<pre class="example">Processor --&gt; 1
+Memory/RAM size --&gt; 2GB
+</pre>
+
+</dd>
+</dl>
+
+</li>
+</ol>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Using VirtualBox to run Virtual Labs</h2>
+<div class="outline-text-2" id="text-6">
+
+<ol>
+<li>Windows Users: Double click the VirtualBox icon on the desktop to
+     start the VirtualBox.
+</li>
+<li>Linux Users (CentOS, Debian, Ubuntu, etc): Search for VirtualBox
+     on user machine. 
+</li>
+<li>Select and Start <b>ubuntu-14.04-college-cloud</b> box.
+</li>
+<li>Login to <b>ubuntu-14.04-college-cloud</b> using the following
+     credentials:
+     UserName : virtual labs
+     Password : cc
+</li>
+<li>Open Firefox and type <a href="http://vlabs.ac.in/">vlabs.ac.in</a> to use Virtual Labs.
+</li>
+<li>These steps need to be followed every time for accessing Virtual
+     Labs using VirtualBox.
+</li>
+</ol>
+
+
+<p>
+  <b>NOTE:</b>
+</p><ul>
+<li>Please use only Firefox ( provided in the VirtualBox ) to use
+    Virtual Labs.
+</li>
+<li>Please do not upgrade Firefox version in the VirtualBox.
+</li>
+</ul>
+
+
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: 20 Feb 2020</p>
+<p class="author">Author: Vlead Systems Team</p>
+<p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>
